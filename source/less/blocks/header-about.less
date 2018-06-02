@@ -1,0 +1,65 @@
+.header-about {
+  height: 575px;
+  background-image: url("../img/photo-b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header-about__name {
+  color: @white;
+  background-color: #ff676e;
+  padding: 30px;
+  max-width: 170px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 200;
+  position: relative;
+  opacity: 0.8;
+  top: 155px;
+  left: 392px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/accentuation.png");
+      background-repeat: no-repeat;
+      height: 6px;
+      width: 6px;
+      top: 50px;
+      left: 82px;
+    }
+}
+
+.header-about__text {
+  display: flex;
+  align-content: flex-end;
+  color: @white;
+  background-color: #4381a7;
+  padding: 30px;
+  max-width: 408px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 300;
+  float: right;
+  position: relative;
+  margin-top: 135px;
+  opacity: 0.8;
+
+    p {
+      max-width: 330px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      border: 2px solid #a82e62;
+      width: 142px;
+      height: 16px;
+      background-color: #a82e62;
+    }
+}
