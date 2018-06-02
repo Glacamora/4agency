@@ -13,7 +13,8 @@
       color: #880b12;
       text-transform: uppercase;
       align-self: center;
-      margin-left: 25px;
+      margin-top: 23px;
+      margin-left: 43px;
     }
 }
 
@@ -27,28 +28,33 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin-left: 90px;
+  margin-left: 100px;
+  letter-spacing: 2px;
 
     &_link {
-      font-size: 16px;
+      font-size: 18px;
       text-decoration: none;
       color: @white;
       align-self: flex-end;
       cursor: pointer;
       position: relative;
-      width: 157px;
+      width: 188px;
 
         span {
-          font-size: 20px;
+          font-size: 21px;
           top: -2px;
-          left: 65px;
+          left: 79px;
           display: inline-flex;
           position: absolute;
         }
 
         &:first-of-type {
-          margin-bottom: 8px;
           text-align: end;
+        }
+
+        &:nth-of-type(2) {
+          font-size: 17px;
+          font-weight: 300;
         }
     }
 }
