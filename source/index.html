@@ -63,8 +63,8 @@
             </svg>
             <p>Профессиональные юридические решения</p>
             <div class="header__contacts">
-              <a href="mailto:ask@4agency.ru" class="header__contacts_link">ask@4agency.ru</a>
-              <a href="tel:+79161234567" class="header__contacts_link">+7 (916)<span> 123-45-67</span></a>
+              <a href="mailto:ask@4agency.ru" class="header__contacts-link">ask@4agency.ru</a>
+              <a href="tel:+79161234567" class="header__contacts-link">+7 (916)<span> 123-45-67</span></a>
             </div>
           </section>
         </div>
@@ -405,5 +405,10 @@
         </section>
       </div>
     </footer>
+    <script src="../js/fixedheader.js"></script>
+    <script>
+      var el = document.querySelector('.header__background');
+      scrollFloat.init(el);
+    </script>
   </body>
 </html>
