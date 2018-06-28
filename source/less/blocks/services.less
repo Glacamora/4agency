@@ -18,7 +18,7 @@
       h3 {
         font-family: "Roboto Slab", serif;
         margin-top: 0;
-        margin-bottom: 80;
+        margin-bottom: 80px;
         font-size: 48px;
       }
     }
@@ -74,15 +74,24 @@
   padding-bottom: 60px;
 }
 
-.services__list-title {
+.services__list-block {
   text-align: right;
   text-transform: uppercase;
-  font-weight: 700;
+  list-style-type: none;
+  font-weight: 800;
   color: #4b85a8;
   border-right: 1px solid;
+  padding-top: 25px;
+  padding-left: 0;
   padding-right: 34px;
   margin: 0;
   line-height: 0.8;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  &:first-of-type {
+    padding-top: 3px;
+  }
 
     &_column-right {
       text-align: left;
@@ -102,24 +111,36 @@
     }
 }
 
+.services__list-prices-title {
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .services__list {
   text-transform: none;
   list-style-type: none;
   font-weight: 400;
   font-size: 13px;
   line-height: 2.3;
-
-    &:first-of-type {
-      padding-top: 10px;
-    }
+  padding-left: 0;
 
     li {
 
       &:last-of-type {
         line-height: 1;
-        padding-top: 7px;
+      }
+
+      p {
+        margin-top: 17px;
+        margin-bottom: 17px;
       }
     }
+}
+
+.services__list-new {
+  font-weight: 800;
+  font-size: 14px;
 }
 
 .services__annotation {
